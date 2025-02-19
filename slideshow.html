@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html style="background-color: rgb(58, 82, 74);" xmlns = "https://www.w3.org/1999/xhtml">
+<head>
+<style>
+
+    h1 {text-align: center; background-color: rgb(81, 92, 92); color: aliceblue; font-family:'Courier New', Courier, monospace;}
+    h5 {text-align: center; background-color:  rgb(81, 92, 92);color: aliceblue; font-family:'Courier New', Courier, monospace ;}
+    p {background-color:  rgb(81, 92, 92);; font-family:'Courier New', Courier, monospace; color: aliceblue;}
+    img {background-color: aquamarine;}
+    
+</style>
+<script type ="text/javascript">
+    function changePhoto(){
+        //very basic photo moving script
+        //basically just going to have it change the number at the end of the src link 
+        var photo = document.getElementById('slideshowPhoto');
+       // photo.src = './slideshowphotos/test 2.png';
+        
+        if(photo.getAttribute("src") == './slideshowphotos/test 1.png'){
+            photo.src = './slideshowphotos/test 2.png';
+           // photo.setAttribute("src","./slideshowphotos/test 2.png")
+        }else if(photo.getAttribute("src") == './slideshowphotos/test 2.png'){
+            photo.src = './slideshowphotos/test 1.png';
+        }
+        
+
+    
+            
+        
+    }
+</script>
+
+    <title>Slideshow</title>
+</head>
+
+<body>
+    <h5> <a href="index.html">Home</a>       <a href="documentatin.html">Documentation</a>   <a href="aboutust.html">About Us</a></h5>
+    <table>
+    <tr><button id="nextPhoto" class="photobtn" onclick="changePhoto()">Next Photo</button></tr>
+    <tr><td><img id="slideshowPhoto" src="./slideshowphotos/test 1.png" alt="1" height="1200" width="1500"></td></tr>
+    </table>
+
+</body>
+
+
+
+</html>
