@@ -16,11 +16,17 @@
         var photo = document.getElementById('slideshowPhoto');
        // photo.src = './slideshowphotos/test 2.png';
         
-        if(photo.getAttribute("src") == './slideshowphotos/test 1.png'){
-            photo.src = './slideshowphotos/test 2.png';
+        if(photo.getAttribute("src") == './slideshowphotos/show1.jpg'){
+            photo.src = './slideshowphotos/show2.jpeg';
            // photo.setAttribute("src","./slideshowphotos/test 2.png")
-        }else if(photo.getAttribute("src") == './slideshowphotos/test 2.png'){
+        }else if(photo.getAttribute("src") == './slideshowphotos/show2.jpeg'){
+            photo.src = './slideshowphotos/show3.jpeg';
+        }else if(photo.getAttribute("src") == './slideshowphotos/show3.jpeg'){
             photo.src = './slideshowphotos/test 1.png';
+        }else if(photo.getAttribute("src") == './slideshowphotos/test 1.png'){
+            photo.src = './slideshowphotos/test 2.png';
+        }else if(photo.getAttribute("src") == './slideshowphotos/test 2.png'){
+            photo.src = './slideshowphotos/show1.jpg';
         }
         
 
